@@ -63,10 +63,10 @@ $(function(){
     }
     $("#captcha").nc_placeholder();
 	//动画登录
-    $('.btn-submit').click(function(e){
+    $('.input-button').click(function(e){
             $('.input-username,dot-left').addClass('animated fadeOutRight')
             $('.input-password-box,dot-right').addClass('animated fadeOutLeft')
-            $('.btn-submit').addClass('animated fadeOutUp')
+            $('.input-button').addClass('animated fadeOutUp')
             setTimeout(function () {
                       $('.avatar').addClass('avatar-top');
                       $('.submit').hide();
@@ -79,10 +79,10 @@ $(function(){
 
           });
 
-    // 回车提交表单
+    // 回车提交表单 by 33 ha o.c om 
     $('#form_login').keydown(function(event){
         if (event.keyCode == 13) {
-            $('.btn-submit').click();
+            $('.input-button').click();
         }
     });
 });
