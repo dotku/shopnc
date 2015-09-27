@@ -67,7 +67,7 @@ define('ATTACH_CMS','cms');
 define('ATTACH_LIVE','live');
 define('ATTACH_MALBUM',ATTACH_PATH.'/member');
 define('ATTACH_MICROSHOP','microshop');
-define('TPL_SHOP_NAME','default');
+define('TPL_SHOP_NAME','nike');
 define('TPL_CIRCLE_NAME', 'default');
 define('TPL_MICROSHOP_NAME', 'default');
 define('TPL_CMS_NAME', 'default');
