@@ -2,7 +2,8 @@
 <?php //echo getChat($layout);?>
 <div id="faq">
   <div class="faq-wrapper">
-    <?php if(is_array($output['article_list']) && !empty($output['article_list'])){ ?><ul>
+    <?php if(is_array($output['article_list']) && !empty($output['article_list'])){ ?>
+	<ul>
     <?php foreach ($output['article_list'] as $k=> $article_class){ ?>
     <?php if(!empty($article_class)){ ?>
    <li> <dl class="s<?php echo ''.$k+1;?>">
