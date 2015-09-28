@@ -3,7 +3,7 @@
  * 网银在线返回地址
  *
  * 
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 丰杰商城 www.toyokou-software.com
  */
 error_reporting(7);
 $_GET['act']	= 'payment';

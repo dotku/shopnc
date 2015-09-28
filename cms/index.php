@@ -4,7 +4,7 @@
  *
  * 商城板块初始化文件，引用框架初始化文件
  *
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 丰杰商城 www.toyokou-software.com
  */
 define('APP_ID','cms');
 define('BASE_PATH',str_replace('\\','/',dirname(__FILE__)));

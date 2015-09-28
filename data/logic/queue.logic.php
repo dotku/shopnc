@@ -6,7 +6,7 @@
  * QueueClient::push('editGroupbuySaleCount',$groupbuy_info);
  * public function editGroupbuySaleCount($groupbuy_info){...}
  *
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 丰杰商城 www.toyokou-software.com
  */
 defined('InShopNC') or exit('Access Invalid!');
 

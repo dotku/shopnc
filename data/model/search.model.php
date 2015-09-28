@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 丰杰商城 www.toyokou-software.com
  */
 
 
@@ -462,7 +462,83 @@ class searchModel{
         }
         return $tpl_data;
     }
-
+    /**
+     * 显示左侧商品分类，仅显示 gc_show = 1 的
+     * @param array $param 分类id
+     * @sign int $sign 0为取得最后一级的同级分类，1为不取得
+     */
+     public function getLeftCategoryOnShow($param, $sign = 0) {
+        $data = array();
+        if (!empty($param)) {
+            $goods_class = Model('goods_class')->getGoodsClassForCacheModel();
+            foreach ($param as $val) {
+                $data[] = $this->_getParentCategory($val, $goods_class, array());
+            }
+        }
+        $tpl_data = array();
+        $gc_list = Model('goods_class')->get_all_category();
+        foreach ($data as $value) {
+            //$tpl_data[$val[0]][$val[1]][$val[2]] = $val[2];
+            if (!empty($gc_list[$value[0]])){   // 一级
+                $tpl_data[$value[0]]['gc_id'] = $gc_list[$value[0]]['gc_id'];
+                $tpl_data[$value[0]]['gc_name'] = $gc_list[$value[0]]['gc_name'];
+                if (!empty($gc_list[$value[0]]['class2'][$value[1]])) { // 二级
+                    $tpl_data[$value[0]]['class2'][$value[1]]['gc_id'] = $gc_list[$value[0]]['class2'][$value[1]]['gc_id'];
+                    $tpl_data[$value[0]]['class2'][$value[1]]['gc_name'] = $gc_list[$value[0]]['class2'][$value[1]]['gc_name'];
+                    if (!empty($gc_list[$value[0]]['class2'][$value[1]]['class3'][$value[2]])) {    // 三级
+                        $tpl_data[$value[0]]['class2'][$value[1]]['class3'][$value[2]]['gc_id'] = $gc_list[$value[0]]['class2'][$value[1]]['class3'][$value[2]]['gc_id'];
+                        $tpl_data[$value[0]]['class2'][$value[1]]['class3'][$value[2]]['gc_name'] = $gc_list[$value[0]]['class2'][$value[1]]['class3'][$value[2]]['gc_name'];
+                        if (!$sign) {   // 取得全部三级分类
+                            foreach ($gc_list[$value[0]]['class2'][$value[1]]['class3'] as $val) {
+                                $tpl_data[$value[0]]['class2'][$value[1]]['class3'][$val['gc_id']]['gc_id'] = $val['gc_id'];
+                                $tpl_data[$value[0]]['class2'][$value[1]]['class3'][$val['gc_id']]['gc_name'] = $val['gc_name'];
+                                if ($value[2] == $val['gc_id']) {
+                                    $tpl_data[$value[0]]['class2'][$value[1]]['class3'][$val['gc_id']]['default'] = 1;
+                                }
+                            }
+                        }
+                    } else {    // 取得全部二级分类
+                        if (!$sign) {   // 取得同级分类
+                            if (!empty($gc_list[$value[0]]['class2'])) {
+                                foreach ($gc_list[$value[0]]['class2'] as $gc2) {
+                                    $tpl_data[$value[0]]['class2'][$gc2['gc_id']]['gc_id'] = $gc2['gc_id'];
+                                    $tpl_data[$value[0]]['class2'][$gc2['gc_id']]['gc_name'] = $gc2['gc_name'];
+                                    if (!empty($gc2['class3'])) {
+                                        foreach ($gc2['class3'] as $gc3) {
+                                            $tpl_data[$value[0]]['class2'][$gc2['gc_id']]['class3'][$gc3['gc_id']]['gc_id'] = $gc3['gc_id'];
+                                            $tpl_data[$value[0]]['class2'][$gc2['gc_id']]['class3'][$gc3['gc_id']]['gc_name'] = $gc3['gc_name'];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } else {    // 取得全部一级分类
+                    if (!$sign) {   // 取得同级分类
+                        if (!empty($gc_list)) {
+                            foreach ($gc_list as $gc1) {
+                                $tpl_data[$gc1['gc_id']]['gc_id'] = $gc1['gc_id'];
+                                $tpl_data[$gc1['gc_id']]['gc_name'] = $gc1['gc_name'];
+                                if (!empty($gc1['class2'])) {
+                                    foreach ($gc1['class2'] as $gc2) {
+                                        $tpl_data[$gc1['gc_id']]['class2'][$gc2['gc_id']]['gc_id'] = $gc2['gc_id'];
+                                        $tpl_data[$gc1['gc_id']]['class2'][$gc2['gc_id']]['gc_name'] = $gc2['gc_name'];
+                                        if (!empty($gc2['class3'])) {
+                                            foreach ($gc2['class3'] as $gc3) {
+                                                $tpl_data[$gc1['gc_id']]['class2'][$gc2['gc_id']]['class3'][$gc3['gc_id']]['gc_id'] = $gc3['gc_id'];
+                                                $tpl_data[$gc1['gc_id']]['class2'][$gc2['gc_id']]['class3'][$gc3['gc_id']]['gc_name'] = $gc3['gc_name'];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return $tpl_data;
+    }
     /**
      * 全文搜索
      * @return array 商品主键，搜索结果总数

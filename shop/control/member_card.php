@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 丰杰商城 www.toyokou-software.com
  */
 
 class member_cardControl extends BaseHomeControl{
