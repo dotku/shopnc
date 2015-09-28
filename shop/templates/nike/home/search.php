@@ -1,22 +1,29 @@
 <?php defined('InShopNC') or exit('Access Invalid!');?>
 <script src="<?php echo SHOP_RESOURCE_SITE_URL.'/js/search_goods.js';?>"></script>
 <link href="<?php echo SHOP_TEMPLATES_URL;?>/css/layout.css" rel="stylesheet" type="text/css">
+<link href="<?php echo SHOP_TEMPLATES_URL;?>/css/search.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 body {
-_behavior: url(<?php echo SHOP_TEMPLATES_URL;
-?>/css/csshover.htc);
+_behavior: url(<?php echo SHOP_TEMPLATES_URL;?>/css/csshover.htc);
 }
 </style>
+<?php 
+	var_dump(count($output['goods_list']));
+?>
 <div class="nch-container wrapper" >
   <div class="left">
     <?php if (!empty($output['goods_class_array'])) {?>
     <div class="nch-module nch-module-style02">
       <div class="title">
-        <h3>分类筛选</h3>
+        <h3>过滤条件</h3>
       </div>
       <div class="content">
         <ul id="files" class="tree">
           <?php foreach ($output['goods_class_array'] as $value) {?>
+		  <?php var_dump($value['class2']['4']['class3']) ?>
+		  <!--
+			
+		  -->
           <li><i class="tree-parent tree-parent-collapsed"></i><a href="<?php echo urlShop('search', 'index', array('cate_id' => $value['gc_id'], 'keyword' => $_GET['keyword']));?>" <?php if ($value['gc_id'] == $_GET['cate_id']) {?>class="selected"<?php }?>><?php echo $value['gc_name']?></a>
             <?php if (!empty($value['class2'])) {?>
             <ul>
@@ -39,6 +46,8 @@ _behavior: url(<?php echo SHOP_TEMPLATES_URL;
       </div>
     </div>
     <?php }?>
+	<?php 
+	/*
     <!-- S 推荐展位 -->
     <div nctype="booth_goods" class="nch-module" style="display:none;"> </div>
     <!-- E 推荐展位 -->
@@ -65,7 +74,8 @@ _behavior: url(<?php echo SHOP_TEMPLATES_URL;
         </div>
         <a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_goodsbrowse&op=list" class="nch-sidebar-all-viewed">全部浏览历史</a></div>
     </div>
-
+		*/
+		?>
   </div>
   <div class="right">
     <?php if(!isset($output['goods_class_array']['child']) && empty($output['goods_class_array']['child']) && !empty($output['goods_class_array'])){?>

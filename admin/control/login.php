@@ -4,7 +4,7 @@
  *
  * 包括 登录 验证 退出 操作
  *
- **by 好商城V3 www.33hao.com 运营版*/
+ **by 丰杰商城 www.toyokou-software.com*/
 
 defined('InShopNC') or exit('Access Invalid!');
 class LoginControl extends SystemControl {

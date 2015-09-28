@@ -18,7 +18,7 @@
       4 => 
       array (
         'gc_id' => '4',
-        'gc_name' => '女装',
+        'gc_name' => '女子',
         'type_id' => '0',
         'type_name' => '',
         'gc_parent_id' => '1',
@@ -397,7 +397,7 @@
       5 => 
       array (
         'gc_id' => '5',
-        'gc_name' => '男装',
+        'gc_name' => '男子',
         'type_id' => '0',
         'type_name' => '',
         'gc_parent_id' => '1',
@@ -2268,7 +2268,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-1.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-1.jpg',
     'class3' => 
     array (
       12 => 
@@ -2361,7 +2361,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       151 => 
@@ -3105,7 +3105,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-2.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-2.jpg',
     'class3' => 
     array (
       156 => 
@@ -3198,7 +3198,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       200 => 
@@ -4066,7 +4066,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-3.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-3.jpg',
     'class3' => 
     array (
       206 => 
@@ -4159,7 +4159,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       258 => 
@@ -6142,7 +6142,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-256.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-256.jpg',
     'class3' => 
     array (
       264 => 
@@ -6235,7 +6235,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       309 => 
@@ -7474,7 +7474,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-308.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-308.jpg',
     'class3' => 
     array (
       314 => 
@@ -7567,7 +7567,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       471 => 
@@ -8484,7 +8484,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-470.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-470.jpg',
     'class3' => 
     array (
       478 => 
@@ -8577,7 +8577,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       531 => 
@@ -9536,7 +9536,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-530.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-530.jpg',
     'class3' => 
     array (
       541 => 
@@ -9629,7 +9629,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       594 => 
@@ -10693,7 +10693,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-593.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-593.jpg',
     'class3' => 
     array (
       604 => 
@@ -10786,7 +10786,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       663 => 
@@ -11827,7 +11827,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://localhost/data/upload/shop/common/category-pic-662.jpg',
+    'pic' => 'http://localhost/cnnewyork.com_shopnc/data/upload/shop/common/category-pic-662.jpg',
     'class3' => 
     array (
       671 => 
@@ -11920,7 +11920,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       731 => 
@@ -13503,7 +13503,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       826 => 
@@ -14577,7 +14577,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       889 => 
@@ -15387,7 +15387,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       960 => 
@@ -16625,7 +16625,7 @@
     'gc_title' => '',
     'gc_keywords' => '',
     'gc_description' => '',
-    'gc_show' => '1',
+    'gc_show' => '0',
     'class2' => 
     array (
       1041 => 

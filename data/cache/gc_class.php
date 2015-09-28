@@ -29,7 +29,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     3 => 
     array (
@@ -44,7 +44,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     256 => 
     array (
@@ -59,7 +59,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     308 => 
     array (
@@ -74,7 +74,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     470 => 
     array (
@@ -89,7 +89,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     530 => 
     array (
@@ -104,7 +104,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     593 => 
     array (
@@ -119,7 +119,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     662 => 
     array (
@@ -134,7 +134,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     730 => 
     array (
@@ -149,7 +149,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     825 => 
     array (
@@ -164,7 +164,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     888 => 
     array (
@@ -179,7 +179,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     959 => 
     array (
@@ -194,7 +194,7 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     1037 => 
     array (
@@ -209,12 +209,12 @@
       'gc_title' => '',
       'gc_keywords' => '',
       'gc_description' => '',
-      'gc_show' => '1',
+      'gc_show' => '0',
     ),
     4 => 
     array (
       'gc_id' => '4',
-      'gc_name' => '女装',
+      'gc_name' => '女子',
       'type_id' => '0',
       'type_name' => '',
       'gc_parent_id' => '1',
@@ -229,7 +229,7 @@
     5 => 
     array (
       'gc_id' => '5',
-      'gc_name' => '男装',
+      'gc_name' => '男子',
       'type_id' => '0',
       'type_name' => '',
       'gc_parent_id' => '1',

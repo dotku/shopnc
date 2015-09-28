@@ -1,6 +1,6 @@
 <?php
 /**
- * 分享设置*by 好商城V3 www.33hao.com 运营版*/
+ * 分享设置*by 丰杰商城 www.toyokou-software.com*/
 
 defined('InShopNC') or exit('Access Invalid!');
 class sns_sharesettingControl extends SystemControl{

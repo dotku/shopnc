@@ -5,7 +5,7 @@
  * 统一入口，进行初始化信息
  *
  *
- *by 好商城V3 www.33hao.com 运营版 
+ *by 丰杰商城 www.toyokou-software.com 
  */
 
 error_reporting(E_ALL & ~E_NOTICE);
