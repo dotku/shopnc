@@ -2,7 +2,7 @@
 /**
  * 支付行为
  *
- * by 33hao.com 好商城V3 运营版
+ * by 丰杰商城 www.toyokou-software.com
  */
 defined('InShopNC') or exit('Access Invalid!');
 class paymentLogic {
@@ -38,7 +38,7 @@ class paymentLogic {
         $pay_amount = 0;
         if (!empty($order_list)) {
             foreach ($order_list as $order_info) {
-			//修复 第三方支付时 货到付款及充值卡没算在内BUG 33 hao .com 好 商城V3	
+			//修复 第三方支付时 货到付款及充值卡没算在内BUG 丰杰商城 www.toyokou-software.com 好 商城V3	
 			$payed_amount = floatval($order_info['rcb_amount'])+floatval($order_info['pd_amount']);
             if ($order_info['payment_code'] != 'offline') {
                 if ($order_info['order_state'] == ORDER_STATE_NEW) {
@@ -83,7 +83,7 @@ class paymentLogic {
 
         //计算本次需要在线支付的订单总金额
         //$pay_amount = ncPriceFormat(floatval($order_info['order_amount']) - floatval($order_info['pd_amount']));
-		//修复 第三方支付时 充值卡没算在内BUG 33 hao .com 好 商城V3
+		//修复 第三方支付时 充值卡没算在内BUG 丰杰商城 www.toyokou-software.com 好 商城V3
 		$pay_amount = ncPriceFormat(floatval($order_info['order_amount']) - floatval($order_info['pd_amount']) - floatval($order_info['rcb_amount']));
 
         $order_info['api_pay_amount'] = $pay_amount;

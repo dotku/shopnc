@@ -2,7 +2,7 @@
 /**
  * 网站设置
  *
- *  by 33 hao .com v3
+ *  by 丰杰商城 www.toyokou-software.com v3
  */
 defined('InShopNC') or exit('Access Invalid!');
 class performControl extends SystemControl{

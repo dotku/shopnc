@@ -3,7 +3,7 @@
  * 手机接口初始化文件
  *
  *
- * by 33hao.com 好商城V3 运营版
+ * by 丰杰商城 www.toyokou-software.com
  */
 
 define('APP_ID','mobile');

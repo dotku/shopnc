@@ -3,7 +3,7 @@
  * mobile父类
  *
  *
- * by 33hao.com 好商城V3 运营版
+ * by 丰杰商城 www.toyokou-software.com
  */
 
 //use Shopnc\Tpl;

@@ -7,23 +7,34 @@ body {
 _behavior: url(<?php echo SHOP_TEMPLATES_URL;?>/css/csshover.htc);
 }
 </style>
-<?php 
-	var_dump(count($output['goods_list']));
-?>
+ <?php 
+            $model_gc = Model('goods_class');
+			$condition['gc_parent_id'] = 1;
+            $gclist = $model_gc->getGoodsClassList($condition);
+            var_dump($gclist);
+         ?>
 <div class="nch-container wrapper" >
   <div class="left">
+    <div style="background-color: #EEEEEE; padding-left:20px; padding-top: 20px;">
+        <h2 style="font-size: 17px; padding-bottom: 10px"><?php echo count($output['goods_list']); ?> 件商品</h2>
+        <p style="padding-bottom: 30px">过滤条件</p>
+        <div class="title">性别</div>
+        <?php 
+            $model_gc = Model('goods_class');
+         ?>
+    </div>
     <?php if (!empty($output['goods_class_array'])) {?>
     <div class="nch-module nch-module-style02">
-      <div class="title">
-        <h3>过滤条件</h3>
-      </div>
-      <div class="content">
-        <ul id="files" class="tree">
-          <?php foreach ($output['goods_class_array'] as $value) {?>
-		  <?php var_dump($value['class2']['4']['class3']) ?>
-		  <!--
-			
-		  -->
+      
+      <div class="">
+        <ul id="files" class="">
+          <?php foreach ($output['goods_class_array'] as $value) { ?>
+          <?php 
+            $model_gc = Model('goods_class');
+            $condition['gc_id'] = intval($value['gc_id']);
+            $gc_show = $model_gc->getfby_gc_id($condition['gc_id'], 'gc_show');
+            if (!$gc_show) {continue;};
+          ?>
           <li><i class="tree-parent tree-parent-collapsed"></i><a href="<?php echo urlShop('search', 'index', array('cate_id' => $value['gc_id'], 'keyword' => $_GET['keyword']));?>" <?php if ($value['gc_id'] == $_GET['cate_id']) {?>class="selected"<?php }?>><?php echo $value['gc_name']?></a>
             <?php if (!empty($value['class2'])) {?>
             <ul>

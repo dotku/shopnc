@@ -1,4 +1,14 @@
 <?php defined('InShopNC') or exit('Access Invalid!');?>
+<style>
+	.public-top-layout, .public-top-layout a,
+	.public-top-layout .user-entry a{
+		background-color: black;
+		color: white;
+	}
+	.public-top-layout a:hover {
+		color: red;
+	}
+</style>
 <div id="append_parent"></div>
 <div id="ajaxwaitid"></div>
 <?php if ($output['hidden_nctoolbar'] != 1) {?>
@@ -126,7 +136,7 @@ backTop('gotop');
   <div class="topbar wrapper">
     <div class="user-entry">
       <?php if($_SESSION['is_login'] == '1'){?>
-      <?php echo $lang['nc_hello'];?> <span>
+      <i class=""></i><span>
       <a href="<?php echo urlShop('member','home');?>"><?php echo $_SESSION['member_name'];?></a>
       <?php if ($output['member_info']['level_name']){ ?>
       <div class="nc-grade-mini" style="cursor:pointer;" onclick="javascript:go('<?php echo urlShop('pointgrade','index');?>');"><?php echo $output['member_info']['level_name'];?></div>
@@ -134,21 +144,10 @@ backTop('gotop');
       </span> <?php echo $lang['nc_comma'],$lang['welcome_to_site'];?> <a href="<?php echo BASE_SITE_URL;?>"  title="<?php echo $lang['homepage'];?>" alt="<?php echo $lang['homepage'];?>"><span><?php echo $output['setting_config']['site_name']; ?></span></a> <span>[<a href="<?php echo urlShop('login','logout');?>"><?php echo $lang['nc_logout'];?></a>] </span>
       <?php }else{?>
       <?php echo $lang['nc_hello'].$lang['nc_comma'].$lang['welcome_to_site'];?> <a href="<?php echo BASE_SITE_URL;?>" title="<?php echo $lang['homepage'];?>" alt="<?php echo $lang['homepage'];?>"><?php echo $output['setting_config']['site_name']; ?></a> <span>[<a href="<?php echo urlShop('login');?>"><?php echo $lang['nc_login'];?></a>]</span> <span>[<a href="<?php echo urlShop('login','register');?>"><?php echo $lang['nc_register'];?></a>]</span>
-      <?php }?><span style="margin-left:10px;"><a href="index.php?act=invite" style="color:red;">邀请返利</a></span>
+      <?php }?>
     </div>
     <div class="quick-menu">
-      <dl>
-        <dt><a href="<?php echo BASE_SITE_URL;?>/wap">手机触屏版</a></dt>
-      </dl>
-	  <dl>
-        <dt><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=show_joinin&op=index" title="免费开店">免费开店</a><i></i></dt>
-        <dd>
-          <ul>
-		    <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=show_joinin&op=index" title="招商入驻">招商入驻</a></li>
-            <li><a href="<?php echo urlShop('seller_login','show_login');?>" target="_blank" title="登录商家管理中心">商家登录</a></li>
-          </ul>
-        </dd>
-      </dl>
+
       <dl>
         <dt><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order">我的订单</a><i></i></dt>
         <dd>
@@ -212,13 +211,6 @@ backTop('gotop');
         </dd>
       </dl>
       <?php }?>
-	  <dl class="weixin">
-        <dt>关注我们<i></i></dt>
-        <dd>
-          <h4>扫描二维码<br/>
-            关注商城微信号</h4>
-          <img src="<?php echo UPLOAD_SITE_URL.DS.ATTACH_COMMON.DS.$GLOBALS['setting_config']['site_logowx']; ?>" > </dd>
-        </dl>
     </div>
   </div>
 </div>

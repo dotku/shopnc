@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao 网店技术交流中心  www.33hao.com 开发
+ * by 丰杰商城 www.toyokou-software.com
  */
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -210,7 +210,7 @@ class goods_classModel extends Model
      * @return  array   二维数组
      */
     public function getGoodsClass($store_id, $pid = 0, $deep = 1) {
-        // 读取商品分类 by 33 hao .com 批量添加分类修改
+        // 读取商品分类 by 丰杰商城 www.toyokou-software.com 批量添加分类修改
         $gc_list_o = $gc_list = $this->getGoodsClassListByParentId($pid);
         // 如果不是自营店铺或者自营店铺未绑定全部商品类目，读取绑定分类
         if (!checkPlatformStoreBindingAllGoodsClass()) {

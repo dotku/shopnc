@@ -3,7 +3,7 @@
  * 默认展示页面
  *
  *
- **by 好商城V3 www.33hao.com 好商城V3 运营版*/
+ **by 好商城V3 www.丰杰商城 www.toyokou-software.com*/
 
 
 defined('InShopNC') or exit('Access Invalid!');

@@ -2,7 +2,7 @@
 /**
  * 结算模型
  *
- * by 33hao.com 好商城V3 运营版
+ * by 丰杰商城 www.toyokou-software.com
  */
 defined('InShopNC') or exit('Access Invalid!');
 
