@@ -8,7 +8,7 @@
     <tbody>
       <tr>
         <td class="w12"></td>
-        <td>欢迎使用【好商城V3-33hao】程序，祝君生意兴隆。<a href="http://bbs.33hao.com?v3" title="技术支持" target="_blank">技术支持</a></td>
+        <td>欢迎使用【好商城V3-33hao】程序，祝君生意兴隆。<a href="http://www.mogutech.com?v3" title="技术支持" target="_blank">技术支持</a></td>
       </tr>
     </tbody><tfoot>
       <tr class="tfoot">

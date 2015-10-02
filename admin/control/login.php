@@ -21,7 +21,7 @@ class LoginControl extends SystemControl {
 		    }elseif ($result === -12){
 		        showMessage(L('login_index_checkcode_wrong'));
 		    }
-		    if (process::islock('admin')) {
+		   if (process::islock('admin')) {
 		        showMessage('您的操作过于频繁，请稍后再试');
 		    }
 			$obj_validate = new Validate();

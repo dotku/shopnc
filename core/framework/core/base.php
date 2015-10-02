@@ -61,7 +61,7 @@ final class Base{
 		$nc_config['db']['master'] = $nc_config['db'][1];
 		$setting_config = $nc_config;
 		$setting = ($setting = rkcache('setting')) ? $setting : rkcache('setting',true);
-		$setting['shopnc_version'] = 'Copyright 2015 <a href="http://bbs.33hao.com" target="_blank">bbs.33hao.com</a> All rights reserved.<br />本演示来源于<a href="http://33haocom.taobao.com" target="_blank">33haocom.taobao.com</a>';
+		$setting['shopnc_version'] = 'Copyright 2015 <a href="http://www.cnnewyork.com" target="_blank">'.$setting['site_name'].'</a> All rights reserved.';
 		$setting_config = array_merge_recursive($setting,$nc_config);
 	}
 
@@ -172,11 +172,11 @@ final class Base{
 					continue;
 				}
 			}
-			header('location: http://bbs.33hao.com');exit();
+			header('location: http://www.mogutech.com');exit();
 		}else{
 			$d = strtolower(stristr($_SERVER['HTTP_HOST'],self::CPURL));
 			if ($d != strtolower(self::CPURL)){
-				header('location: http://bbs.33hao.com');exit();
+				header('location: http://www.mogutech.com');exit();
 			}
 		}
 	}

@@ -3,7 +3,7 @@
  * 默认展示页面
  *
  *
- **by 好商城V3 www.丰杰商城 www.toyokou-software.com*/
+ **by 好商城V3 丰杰商城 www.toyokou-software.com*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -47,6 +47,7 @@ class indexControl extends BaseHomeControl{
 		Tpl::output('web_html',$web_html);
 
 		Model('seo')->type('index')->show();
+        Tpl::setLayout('home_layout_bootstrap');
 		Tpl::showpage('index');
 	}
 
